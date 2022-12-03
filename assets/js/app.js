@@ -220,7 +220,7 @@ buscar.addEventListener("click", () => {
               </div>
               <div class="modal-body">
                 <p>No ha ingresado información.</p>
-                <p>Debe indicar el criterio de montos, para procesar la busqueda</p>
+                <p>Debe indicar el criterio de montos, para procesar la búsqueda</p>
                 <small></small>
               </div>
               <div class="modal-footer">
