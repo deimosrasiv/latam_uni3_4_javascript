@@ -1,0 +1,9 @@
+Nombre:	Zapatillas Running Hombre New Balance Fresh Foam 880 V12 Bicolor
+Precio:	$109.990
+Genero:	Hombre
+Distancia:	42K
+Marca:	New Balance
+Color:	Bicolor
+Codigo de Barra:	195907624722
+Oferta:	NO
+Descripcion:	Las New Balance Fresh Foam 880 v12 es un caballo de batalla probado de zapatillas para correr.

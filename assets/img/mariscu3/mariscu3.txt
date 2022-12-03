@@ -1,0 +1,9 @@
+Nombre:	Zapatillas Running Hombre New Balance Arishi V3 Morada
+Precio:	$59.990
+Genero:	Hombre
+Distancia:	10K
+Marca:	New Balance
+Color:	Morado
+Codigo de barra:	195907637289
+Oferta:	No
+Descripcion:	Estas zapatillas running para mujer de New Balance, las Fresh Foam Arishi están fabricadas para ofrecer un estilo versátil y un gran rendimiento en el gimnasio, en la pista y en la ciudad

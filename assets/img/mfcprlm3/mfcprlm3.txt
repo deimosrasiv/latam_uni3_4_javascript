@@ -1,0 +1,10 @@
+Nombre:	Zapatillas Running Hombre New Balance Fuel Cell Propel v3 Blanco
+Precio:	$55.990
+Genero:	Hombre
+Distancia:	21K
+Marca:	New Balance
+Color:	Blanco
+Codigo de Barra:	195481436919
+Oferta:	Si
+Precio Antes:$69.990
+Descripcion:	El FuelCell Propel v3 de New Balance está construido para un kilometraje versátil.

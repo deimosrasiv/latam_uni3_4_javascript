@@ -1,0 +1,9 @@
+Nombre:	Zapatillas Running Hombre New Balance Fresh Foam More V4 Blanca
+Precio:	$144.990
+Genero:	Hombre
+Distancia:	42K
+Marca:	New Balance
+Color:	Blanco
+Codigo de Barra:	196307444170
+Oferta:	No
+Descripcion:	La amortiguación que siempre deseaste en la NB Fresh Foam More V4.

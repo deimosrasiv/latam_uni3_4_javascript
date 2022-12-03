@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Balance | Tienda de Pruebas</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon.webp">
+    <!-- Mis Css  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    
+    
+    <!-- Bootstrap   -->
+ <!-- JavaScript Bundle with Popper -->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    
+    
+</head>
+<body>
+
+    <nav class=" container-fluid BarraNav py-4 ">
+    
+      <div class="container-fluid" align="center" style="background-color:rgb(245, 246, 247) ;">
+        <p >Lorem ipsum dolor sit amet consectetus totam. Quibusdam, voluptatum.</p>
+      </div>
+
+
+
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3" align="center">
+                <img class="icon" src="assets/img/logo.svg" />
+            </div>   
+            <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9 ">
+                
+            </div>
+        </div>
+        
+
+
+
+      </nav>
+
+
+    <section class="nav">
+      <p></p>
+    </section>
+
+
+        <aside class="container">
+          
+
+           
+
+
+            <div class="col col-sm-8 col-md-8 col-lg-8 col-xl-8">
+
+              <div class="container pt-4" align="center">
+               
+                <h4 class="pb-4" align="center"><strong>Zapatillas</strong> </h4>
+             </div>
+             <div class="container">
+                 <div class="row">
+ 
+                     <div class="col col-sm-2 col-md-4 col-lg-4 col-xl-4  ">
+                         <img class="iconFilter" src="assets/icons/filtrar.png"></i>
+                     </div>
+ 
+                     <div class="col col-sm-6 col-md-6 col-lg-6 col-xl-6" align="left">
+                         <p class="textfiltro">Filtrar</p>
+                     </div>
+ 
+                     <div class="col col-sm-2 col-md-2 col-lg-2 col-xl-2" align="right">
+                       <p class="textfiltro" id="allSneakers">3</p>
+                   </div>
+ 
+                 </div>
+ 
+ 
+ 
+             </div>
+             <hr>  
+             <div class="row">
+                <div class="col col-6">
+                  <input type="number" id="desde" step="10000" min="0" max="100000" value="0" class="form-control shadow-lg">
+                  <div align="center">
+                    <small >Desde</small>
+                  </div>
+
+                </div>
+                <div class="col col-6">
+                  <input type="number" id="hasta" step="10000" min="0" max="200000" value="0" class="form-control shadow-lg">
+                  <div align="center">
+                    <small >Hasta</small>
+                  </div>
+                </div>
+                <div class="col col-12 py-4" align="center">
+                  <button class="btn btn-primary" id="buscar"> Buscar</button>
+                </div>
+
+              </div>
+              
+                           
+             
+             
+        
+ 
+         <div class="accordion accordion-flush" id="accordionFlushExample">
+             <div class="accordion-item">
+               <h2 class="accordion-header pb-3" id="flush-headingOne">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#price-collapse" aria-expanded="false" aria-controls="price-collapse">
+                   Preciosos
+                 </button>
+               </h2>
+               <div id="price-collapse" class="accordion-collapse collapse pb-3" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                 <div class="container">
+                   <div class="row">
+                     <div class="col-6" align="center">
+                         <button id="c0c1" class="btn btn-button" style="font-size: 12px">$0 - $100.000</button>
+                     </div>
+ 
+                     <div class="col-6" align="center">
+                         <button id="c1c2" class="btn btn-button" style="font-size: 12px">$100.000 - $200.000</button>
+                     </div>
+               </div>
+                 </div>
+                 
+                 
+               </div>
+             </div>
+ 
+             <div class="accordion-item">
+                 <h2 class="accordion-header pb-3" id="flush-headingOne">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gender-collapse" aria-expanded="false" aria-controls="gender-collapse">
+                     Género
+                   </button>
+                 </h2>
+                 <div id="gender-collapse" class="accordion-collapse collapse pb-3" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                   <div class="container">
+                       <div class="row">
+                             <div class="col-6" align="center">
+                                 <button id="men" class="btn btn-button" style="font-size: 12px">Hombre</button>
+                             </div>
+ 
+                             <div class="col-6" align="center">
+                                 <button id="woman" class="btn btn-button" style="font-size: 12px">Mujer</button>
+                             </div>
+                       </div>
+                   </div>
+                   
+                   
+                 </div>
+               </div>
+ 
+               <div class="accordion-item">
+                 <h2 class="accordion-header pb-3" id="flush-headingOne">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#distance-collapse" aria-expanded="false" aria-controls="distance-collapse">
+                     Distancia
+                   </button>
+                 </h2>
+                 <div id="distance-collapse" class="accordion-collapse collapse pb-3" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                   <div class="container">
+                       <div class="row">
+                             <div class="col-6 " align="center">
+                                 <button id="pk" class="btn btn-button" style="font-size: 12px">Primeros Km</button>
+                             </div>
+                             <div class="col-6" align="center">
+                               <button id="diezk" class="btn btn-button" style="font-size: 12px">Hasta 10K</button>
+                             </div>
+                             <div class="col-6" align="center">
+                               <button id="veinteyunok" class="btn btn-button" style="font-size: 12px">Hasta 21K</button>
+                             </div>
+                             <div class="col-6" align="center">
+                               <button id="cuarentaydosk" class="btn btn-button" style="font-size: 12px">Hasta 42K</button>
+                           </div>
+                       </div>
+                   </div>
+ 
+                   
+                   
+                   
+                 </div>
+               </div>
+ 
+ 
+               <div class="accordion-item">
+                 <h2 class="accordion-header pb-3" id="flush-headingOne">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sale-collapse" aria-expanded="false" aria-controls="sale-collapse">
+                     Oferta
+                   </button>
+                 </h2>
+                 <div id="sale-collapse" class="accordion-collapse collapse pb-3" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                   <div class="container">
+                       <div class="row">
+                             <div class="col-12" align="center">
+                                 <button id="descuento" class="btn btn-button" style="font-size: 12px">Con Descuento</button>
+                             </div>
+                             
+                       </div>
+                   </div>
+                   
+                   
+                 </div>
+               </div>
+           
+ 
+ 
+ 
+             </div>
+             <div class=" container-fluid px-4 py-4 borde" >
+               <h4>Proximos Eventos</h4>
+             </div>
+ 
+             <div class="img21k px-4 py-4" align="center">
+               <a href="https://www.maratonvina.cl/inscripcion-21k/">
+                 <img src="assets/img/21K-5.jpg" class="img21k" alt="">
+               </a>
+               
+             </div>
+
+            </div>
+
+          </div>
+
+        
+         
+            
+
+            
+        </aside>
+
+
+
+    
+      <main class="pt-0" align="center">
+        <div class="row">
+          <div class="col-2">
+
+          </div>
+          <div class="col-8">
+            
+            <p>Tus nuevas zapatillas favoritas están acá.
+              La variedad de zapatillas más grande de Lifestyle, running, fútbol, trail y tenis.
+              Disfruta de tu deporte con la mejor calidad y más amplia variedad en calzado.       
+            </p> 
+          </div>
+        </div>
+
+         <div class="items" align="center" id="listItems">
+         
+
+         </div>
+         
+            
+          
+        
+
+      </main>
+
+
+
+
+      <article class="nav">
+        <p></p>
+      </article>
+
+
+
+
+
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-0 col-xl-1 col-lg-1 col-md-1 my-3 px-auto">
+              </div>
+              <div class="col-12 col-xl-3 col-lg-3 col-md-3  my-3 px-auto text-center mb-3">
+                  <div class="row">
+                      <div class="col col-12">
+                          <img src="assets/img/logo-blustore-blanco.png" class="logo">
+                      </div>
+                      <div class="col col-12">
+                          <img src="assets/img/logo-cc.png" class="img-fluid certificado mx-3">
+                          <img src="assets/img/ccs-confianza_x2.png" class="img-fluid certificado pb-4">
+                          <br>
+                      </div>
+                      <div class="col col-12 ">
+                          <p>SOCIAL MEDIA</p>
+                          <a href="https://www.facebook.com/eduardo.rivaschasco/" target="_blank" class="mx-3"><i class="fa-brands fa-square-facebook fa-2xl rss"></i></a>
+                          <a href="https://www.instagram.com/deimosrasiv/" target="_blank"><i class="fa-brands fa-instagram fa-2xl rss"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-xl-4 col-lg-4 col-md-4  my-3 px-auto">
+                  <div class="container">
+                      <p class="text-center fs-4">Recive cupones en tu correo</p>
+                      <div class="row">
+                          <form>
+                              <!-- Formulario para canjeo de Cupones -->
+                              <div class="col col-12 input-group input-group-sm my-3 ">
+                                  <input id="nombre" type="text" class="form-control mx-3 text-capitalize" required placeholder="Nombre">
+                              </div>
+                              <div class=" col col-12 input-group input-group-sm ">
+                                  <input id="email" type="text" class="form-control mx-3" required placeholder="Correo Electrónico">
+                              </div>
+                              <div class="container text-center pt-4 ">
+                                  <button type="button" class="btn btn-light btn-sm fs-5" onclick="enviar()" aria-hidden="true">Enviar</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-xl-3 col-lg-3 col-md-3  my-3 px-auto text-center">
+                  <div class="col-12">
+                      <small class="fs-4">VISITANOS</small>
+                  </div>
+                  <div class="col-12 pb-3">
+                      <i class="fas fa-thin fa-location-dot fa-xl pb-2"></i>
+                      <small>Mall Apumanque / Local 396</small>
+                  </div>
+                  <!-- Formas de Pago  -->
+                  <img class="pago pb-1" src="assets/img/webpay-footer.png">
+                  <img class="pago pb-1" src="assets/img/pago_cuenta_rut.png">
+                  <img class="pago pb-1" src="assets/img/mercado-pago.png">
+                  <img class="pago pb-1" src="assets/img/khipu-footer_1.png">
+              </div>
+              <div class="col-0 col-xl-1 col-lg-1 col-md-1 my-3 px-auto">
+              </div>
+          </div>
+      </div>
+        <p align="center">© 2020-2021 Santiago, Chile Ð€IMØ§¯®Ã§Iv Todos los derechos reservados.</p>
+      </footer>
+
+
+
+      <!-- Modal para mensajeria --> 
+    <div class="modal fade  " tabindex="-1" id="modalmensajes" aria-labelledby="modalmensajes" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content" id="modalcontenido">
+              
+          </div>
+      </div>
+  </div>
+
+
+
+<!-- File js  -->
+ <script src="assets/js/app.js"></script>
+<!-- Repositorio de Iconos  -->
+<script src="https://kit.fontawesome.com/4a4c7845d8.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+
+</body>
+</html>

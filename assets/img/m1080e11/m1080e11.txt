@@ -1,0 +1,10 @@
+Nombre:	Zapatillas Running Hombre New Balance 1080 Bicolor
+Precio:	$90.990
+Genero:	Hombre
+Distancia:	42K
+Marca:	New Balance
+Color:	Bicolor
+Codigo de Barra:	195481420390
+Oferta:	Si
+Precio Antes: $129.990
+Descripcion:	Las New Balance Fresh Foam 1080 ofrecen un lujoso confort para la mejor conducción en el camino. Esta zapatilla de running combina una suave entresuela Fresh Foam con nuestra tecnología Ultra Heel para un ajuste cómodo y de apoyo. Su comodidad la podrás sentir sentir en cada zancada.

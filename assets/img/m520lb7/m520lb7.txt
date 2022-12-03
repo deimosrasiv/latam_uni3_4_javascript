@@ -1,0 +1,9 @@
+Nombre:	Zapatillas Running Hombre New Balance 520 Negra
+Precio:	$39.990
+Genero:	Hombre
+Distancia:	Primeros Pasos
+Marca:	New Balance
+Codigo de Barra:	194768908514
+Oferta:	Si
+Precio Antes:	$54.990
+Descripcion:	La New Balance 520 combina la comodidad durante todo el día con el rendimiento característico del diseño.

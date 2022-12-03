@@ -1,0 +1,10 @@
+Nombre:	Zapatillas Running Hombre New Balance 420 Negra
+Precio:	$39.990
+Genero:	Hombre
+Distancia:	Primeros Pasos
+Marca:	New Balance
+Codigo de Barra:	195481270001
+Oferta:	Si
+Precio Antes:	$44.990
+Descripcion:	Las New Balance 420 fueron construidas para el rendimiento con una entresuela suave y afelpada que amortigua tus zancadas y proporciona una conducción cómoda.
+

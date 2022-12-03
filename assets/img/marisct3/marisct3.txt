@@ -1,0 +1,10 @@
+Nombre:	Zapatillas Running Hombre New Balance Fresh Foam Arishi v3 Negra
+Precio:	$39.990
+Genero:	Hombre
+Distancia:	10K
+Marca:	New Balance
+Color:	Negro
+Codigo de Barra:	194768898518
+Oferta:	Si
+Precio Antes:	$54.990
+Descripcion:	La zapatilla de running Fresh Foam Arishiv3 para hombre está confeccionada con una capellada de punto de ingeniería y superposiciones sin costuras para garantizar un uso diario ligero y cómodo.

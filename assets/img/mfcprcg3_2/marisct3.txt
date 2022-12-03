@@ -1,0 +1,10 @@
+Nombre:	Zapatillas Running Hombre New Balance Fresh Foam Arishi v3 Negra
+Precio:	$84.990
+Genero:	Hombre
+Distancia:	21K
+Marca:	New Balance
+Color:	Bicolor
+Codigo de Barra:	195907795019
+Oferta:	no
+Precio Antes:	$0
+Descripcion:El Fuel Cell Propel v3 de New Balance está construido para un kilometraje versátil.

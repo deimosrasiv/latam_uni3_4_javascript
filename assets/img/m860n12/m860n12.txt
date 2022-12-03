@@ -1,0 +1,9 @@
+Nombre:	Zapatillas Running Hombre New Balance Fresh Foam X 860 V12 Verde Petroleo
+Precio:	$109.990
+Genero:	Hombre
+Distancia:	42K
+Marca:	New Balance
+Color: 	Verde Petroleo
+Codigo de Barra: 195481440831
+Oferta:	No
+Descripcion:	Corre comodo, fresco y por muchos kilómetros con las nuevas NB Fresh Foam x 860 V12.

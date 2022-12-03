@@ -1,0 +1,9 @@
+Nombre:	Zapatillas Running Hombre New Balance Arishi v4 Negra
+Precio:	$64.990
+Genero:	Hombre
+Distancia:	10K
+Marca:	New Balance
+Color:	Negro
+Codigo de Barra:	196307412179
+Oferta:	No
+Descripcion:	Las versátiles zapatillas Fresh Foam Arishi v4 de New Balance combinan amortiguación diseñada con un estilo atlético.

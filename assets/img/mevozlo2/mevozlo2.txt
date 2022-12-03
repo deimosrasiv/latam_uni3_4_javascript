@@ -1,0 +1,9 @@
+Nombre:	Zapatillas Running Hombre New Balance Evoz V2 Naranja
+Precio:	$72.990
+Genero:	Hombre
+Distancia: 	42K
+Marca:	New Balance
+Color:	Naranja
+Codigo de Barra: 195907619773
+Oferta:	No
+Descripcion: Las Nuevas Evoz V2 te brindarán toda la amortiguación y comodidad necesaria para entrenar o correr diariamente.
