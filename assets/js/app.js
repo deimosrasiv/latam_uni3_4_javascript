@@ -23,8 +23,7 @@ const buscar = document.querySelector("#buscar");
 
 
 
-let sneakers = [
-    {
+let sneakers = [{
         mod: 'm520lb7',
         nombre: 'Zapatillas Running Hombre New Balance 520 Negra',
         precio: 39990,
@@ -33,7 +32,7 @@ let sneakers = [
         oferta: 'si',
         pantes: 54990,
         descripcion: 'La New Balance 520 combina la comodidad durante todo el día con el rendimiento característico del diseño.',
-        imagen:'assets/img/m520lb7/m520lb7_2.webp'
+        imagen: 'assets/img/m520lb7/m520lb7_2.webp'
     },
     {
         mod: 'm860n12',
@@ -44,7 +43,7 @@ let sneakers = [
         oferta: 'no',
         pantes: '0',
         descripcion: 'Corre comodo, fresco y por muchos kilómetros con las nuevas NB Fresh Foam x 860 V12.',
-        imagen:'assets/img/m860n12/m860n12_2.webp'
+        imagen: 'assets/img/m860n12/m860n12_2.webp'
     },
     {
         mod: 'm880m12',
@@ -152,7 +151,7 @@ let sneakers = [
         genero: 'hombre',
         distancia: '42k',
         oferta: 'no',
-        pantes:'0',
+        pantes: '0',
         descripcion: 'La amortiguación que siempre deseaste en la NB Fresh Foam More V4.',
         imagen: 'assets/img/mmorwt/mmorwt4_2.webp'
     },
@@ -163,7 +162,7 @@ let sneakers = [
         genero: 'mujer',
         distancia: '42k',
         oferta: 'no',
-        pantes:'0',
+        pantes: '0',
         descripcion: 'Descubre el pináculo de las zapatillas de Running NB, La nueva Fresh Foam 1080 v12.',
         imagen: 'assets/img/w1080v12/w1080v12_2.webp'
     },
@@ -174,7 +173,7 @@ let sneakers = [
         genero: 'hombre',
         distancia: '21k',
         oferta: 'no',
-        pantes:'0',
+        pantes: '0',
         descripcion: 'El Fuel Cell Propel v3 de New Balance está construido para un kilometraje versátil.',
         imagen: 'assets/img/marisct3/marisct3_2.webp'
     },
@@ -182,16 +181,16 @@ let sneakers = [
 
 allSneakers.innerHTML = sneakers.length;
 
-buscar.addEventListener("click", () =>{
+buscar.addEventListener("click", () => {
     let modal = "modalmensajes";
     let desde = document.querySelector("#desde").value;
     let hasta = document.querySelector("#hasta").value;
 
-    if (desde > hasta){
+    if (desde > hasta) {
         console.log("desde es mayor que hasta")
 
         $("#" + modal).modal("show");; // abrir
-        
+
         modalcontenido.innerHTML = `
             <div class="modal-header">
                 <h5 class="modal-title">Datos Incorrectos</h5>
@@ -208,12 +207,12 @@ buscar.addEventListener("click", () =>{
               </div>
             `;
         return
-     }
+    }
 
-     if( desde =="0" && hasta =="0"){
+    if (desde == "0" && hasta == "0") {
         console.log("no ingresado montos");
         $("#" + modal).modal("show");; // abrir
-        
+
         modalcontenido.innerHTML = `
             <div class="modal-header">
                 <h5 class="modal-title">Datos Incorrectos</h5>
@@ -230,12 +229,12 @@ buscar.addEventListener("click", () =>{
               </div>
             `;
         return
-     }
+    }
 
 
 
-    const result = sneakers.filter(sneakers => sneakers.precio > desde && sneakers.precio < hasta );
-    
+    const result = sneakers.filter(sneakers => sneakers.precio > desde && sneakers.precio < hasta);
+
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -259,8 +258,8 @@ buscar.addEventListener("click", () =>{
             </div>
             
           </div>
-            ` 
-            
+            `
+
         } else {
             listDom.innerHTML += `
         <div>
@@ -281,17 +280,17 @@ buscar.addEventListener("click", () =>{
       </div>
         `
         }
-    
-        
+
+
     }
-    
+
 })
 
-c0c1.addEventListener("click",() =>{
+c0c1.addEventListener("click", () => {
     console.log("de 0 a 100");
-    listDom.innerHTML =``
-    const result = sneakers.filter(sneakers => sneakers.precio > 0 && sneakers.precio < 100000 );
-    
+    listDom.innerHTML = ``
+    const result = sneakers.filter(sneakers => sneakers.precio > 0 && sneakers.precio < 100000);
+
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -315,8 +314,8 @@ c0c1.addEventListener("click",() =>{
             </div>
             
           </div>
-            ` 
-            
+            `
+
         } else {
             listDom.innerHTML += `
         <div>
@@ -337,16 +336,16 @@ c0c1.addEventListener("click",() =>{
       </div>
         `
         }
-    
-        
+
+
     }
 })
 
-c1c2.addEventListener("click",() =>{
+c1c2.addEventListener("click", () => {
     console.log("sobre  100");
-    listDom.innerHTML =``
-    const result = sneakers.filter(sneakers => sneakers.precio > 100000 && sneakers.precio < 200000 );
-    
+    listDom.innerHTML = ``
+    const result = sneakers.filter(sneakers => sneakers.precio > 100000 && sneakers.precio < 200000);
+
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -370,8 +369,8 @@ c1c2.addEventListener("click",() =>{
             </div>
             
           </div>
-            ` 
-            
+            `
+
         } else {
             listDom.innerHTML += `
         <div>
@@ -392,18 +391,18 @@ c1c2.addEventListener("click",() =>{
       </div>
         `
         }
-    
-        
+
+
     }
 })
 
-men.addEventListener("click",() =>{
+men.addEventListener("click", () => {
     console.log("hombre");
-    
-    listDom.innerHTML =``
 
-    const result = sneakers.filter(sneakers => sneakers.genero == "hombre" );
-    
+    listDom.innerHTML = ``
+
+    const result = sneakers.filter(sneakers => sneakers.genero == "hombre");
+
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -427,8 +426,8 @@ men.addEventListener("click",() =>{
             </div>
             
           </div>
-            ` 
-            
+            `
+
         } else {
             listDom.innerHTML += `
         <div>
@@ -449,17 +448,17 @@ men.addEventListener("click",() =>{
       </div>
         `
         }
-    
-        
+
+
     }
 })
 
-woman.addEventListener("click",() =>{
+woman.addEventListener("click", () => {
     console.log("mujer");
-    
-    listDom.innerHTML =``
-    const result = sneakers.filter(sneakers => sneakers.genero == "mujer" );
-    
+
+    listDom.innerHTML = ``
+    const result = sneakers.filter(sneakers => sneakers.genero == "mujer");
+
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -483,8 +482,8 @@ woman.addEventListener("click",() =>{
             </div>
             
           </div>
-            ` 
-            
+            `
+
         } else {
             listDom.innerHTML += `
         <div>
@@ -505,16 +504,16 @@ woman.addEventListener("click",() =>{
       </div>
         `
         }
-    
-        
+
+
     }
 })
 
-pk.addEventListener("click", ()=>{
+pk.addEventListener("click", () => {
     console.log("pk")
-    listDom.innerHTML =``
-    const result = sneakers.filter(sneakers => sneakers.distancia == "primeros pasos" );
-    
+    listDom.innerHTML = ``
+    const result = sneakers.filter(sneakers => sneakers.distancia == "primeros pasos");
+
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -538,8 +537,8 @@ pk.addEventListener("click", ()=>{
             </div>
             
           </div>
-            ` 
-            
+            `
+
         } else {
             listDom.innerHTML += `
         <div>
@@ -560,16 +559,16 @@ pk.addEventListener("click", ()=>{
       </div>
         `
         }
-    
-        
+
+
     }
 })
 
-diezk.addEventListener("click", ()=>{
+diezk.addEventListener("click", () => {
     console.log("10k")
-    listDom.innerHTML =``
-    const result = sneakers.filter(sneakers => sneakers.distancia == "10k" );
-    
+    listDom.innerHTML = ``
+    const result = sneakers.filter(sneakers => sneakers.distancia == "10k");
+
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -593,8 +592,8 @@ diezk.addEventListener("click", ()=>{
             </div>
             
           </div>
-            ` 
-            
+            `
+
         } else {
             listDom.innerHTML += `
         <div>
@@ -615,16 +614,16 @@ diezk.addEventListener("click", ()=>{
       </div>
         `
         }
-    
-        
+
+
     }
 })
 
-veinteyunok.addEventListener("click", ()=>{
+veinteyunok.addEventListener("click", () => {
     console.log("21")
-    listDom.innerHTML =``
-    const result = sneakers.filter(sneakers => sneakers.distancia == "21k" );
-    
+    listDom.innerHTML = ``
+    const result = sneakers.filter(sneakers => sneakers.distancia == "21k");
+
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -648,8 +647,8 @@ veinteyunok.addEventListener("click", ()=>{
             </div>
             
           </div>
-            ` 
-            
+            `
+
         } else {
             listDom.innerHTML += `
         <div>
@@ -670,16 +669,16 @@ veinteyunok.addEventListener("click", ()=>{
       </div>
         `
         }
-    
-        
+
+
     }
 })
 
-cuarentaydosk.addEventListener("click", ()=>{
+cuarentaydosk.addEventListener("click", () => {
     console.log("42")
-    listDom.innerHTML =``
-    const result = sneakers.filter(sneakers => sneakers.distancia == "42k" );
-    
+    listDom.innerHTML = ``
+    const result = sneakers.filter(sneakers => sneakers.distancia == "42k");
+
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -703,8 +702,8 @@ cuarentaydosk.addEventListener("click", ()=>{
             </div>
             
           </div>
-            ` 
-            
+            `
+
         } else {
             listDom.innerHTML += `
         <div>
@@ -725,16 +724,16 @@ cuarentaydosk.addEventListener("click", ()=>{
       </div>
         `
         }
-    
-        
+
+
     }
 })
 
-descuento.addEventListener("click", ()=>{
+descuento.addEventListener("click", () => {
     console.log("descuento")
-    listDom.innerHTML =``
-    const result = sneakers.filter(sneakers => sneakers.oferta == "si" );
-    
+    listDom.innerHTML = ``
+    const result = sneakers.filter(sneakers => sneakers.oferta == "si");
+
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -758,11 +757,11 @@ descuento.addEventListener("click", ()=>{
             </div>
             
           </div>
-            ` 
-            
-        } 
-    
-        
+            `
+
+        }
+
+
     }
 })
 
@@ -788,8 +787,8 @@ for (let sneaker of sneakers) {
         </div>
         
       </div>
-        ` 
-        
+        `
+
     } else {
         listDom.innerHTML += `
     <div>
@@ -811,6 +810,5 @@ for (let sneaker of sneakers) {
     `
     }
 
-    
-}
 
+}
