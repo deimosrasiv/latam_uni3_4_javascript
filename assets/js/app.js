@@ -15,12 +15,7 @@ const cuarentaydosk = document.querySelector("#cuarentaydosk");
 const descuento = document.querySelector("#descuento");
 const desde = document.querySelector("#desde");
 const hasta = document.querySelector("#hasta");
-
-
 const buscar = document.querySelector("#buscar");
-
-
-
 
 
 let sneakers = [{
@@ -187,7 +182,7 @@ buscar.addEventListener("click", () => {
     let hasta = document.querySelector("#hasta").value;
 
     if (desde > hasta) {
-        console.log("desde es mayor que hasta")
+        
 
         $("#" + modal).modal("show");; // abrir
 
@@ -210,7 +205,7 @@ buscar.addEventListener("click", () => {
     }
 
     if (desde == "0" && hasta == "0") {
-        console.log("no ingresado montos");
+        
         $("#" + modal).modal("show");; // abrir
 
         modalcontenido.innerHTML = `
@@ -287,398 +282,61 @@ buscar.addEventListener("click", () => {
 })
 
 c0c1.addEventListener("click", () => {
-    console.log("de 0 a 100");
     listDom.innerHTML = ``
     const result = sneakers.filter(sneakers => sneakers.precio > 0 && sneakers.precio < 100000);
-
-    allSneakers.innerHTML = result.length;
-    listDom.innerHTML = ``
-
-    for (let resul of result) {
-
-        if (resul.oferta == "no") {
-            listDom.innerHTML += `
-            <div>
-            <div class="imgProduct" align="center">
-              <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-              <small>${resul.nombre}</small>
-                <div class="row">
-                    
-                    <div class="col-4" align="left">
-                        
-                    </div>
-                    <div class="col-8" align="right">
-                        <p class=" price Before fs-7">${resul.precio}</p>
-                    </div>
-                </div>
-            </div>
-            
-          </div>
-            `
-
-        } else {
-            listDom.innerHTML += `
-        <div>
-        <div class="imgProduct" align="center">
-          <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-          <small>${resul.nombre}</small>
-            <div class="row">
-                
-                <div class="col-4" align="left">
-                    <p class="text-secondary price  text-decoration-line-through fs-7">${resul.pantes}</p>
-                </div>
-                <div class="col-8" align="right">
-                    <p class=" price Before fs-7">${resul.precio}</p>
-                </div>
-            </div>
-        </div>
-        
-      </div>
-        `
-        }
-
-
-    }
+    pintar(result);
 })
 
 c1c2.addEventListener("click", () => {
-    console.log("sobre  100");
     listDom.innerHTML = ``
     const result = sneakers.filter(sneakers => sneakers.precio > 100000 && sneakers.precio < 200000);
-
-    allSneakers.innerHTML = result.length;
-    listDom.innerHTML = ``
-
-    for (let resul of result) {
-
-        if (resul.oferta == "no") {
-            listDom.innerHTML += `
-            <div>
-            <div class="imgProduct" align="center">
-              <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-              <small>${resul.nombre}</small>
-                <div class="row">
-                    
-                    <div class="col-4" align="left">
-                        
-                    </div>
-                    <div class="col-8" align="right">
-                        <p class=" price Before fs-7">${resul.precio}</p>
-                    </div>
-                </div>
-            </div>
-            
-          </div>
-            `
-
-        } else {
-            listDom.innerHTML += `
-        <div>
-        <div class="imgProduct" align="center">
-          <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-          <small>${resul.nombre}</small>
-            <div class="row">
-                
-                <div class="col-4" align="left">
-                    <p class="text-secondary price  text-decoration-line-through fs-7">${resul.pantes}</p>
-                </div>
-                <div class="col-8" align="right">
-                    <p class=" price Before fs-7">${resul.precio}</p>
-                </div>
-            </div>
-        </div>
-        
-      </div>
-        `
-        }
-
-
-    }
+    pintar(result);
 })
 
 men.addEventListener("click", () => {
-    console.log("hombre");
-
     listDom.innerHTML = ``
-
     const result = sneakers.filter(sneakers => sneakers.genero == "hombre");
-
-    allSneakers.innerHTML = result.length;
-    listDom.innerHTML = ``
-
-    for (let resul of result) {
-
-        if (resul.oferta == "no") {
-            listDom.innerHTML += `
-            <div>
-            <div class="imgProduct" align="center">
-              <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-              <small>${resul.nombre}</small>
-                <div class="row">
-                    
-                    <div class="col-4" align="left">
-                        
-                    </div>
-                    <div class="col-8" align="right">
-                        <p class=" price Before fs-7">${resul.precio}</p>
-                    </div>
-                </div>
-            </div>
-            
-          </div>
-            `
-
-        } else {
-            listDom.innerHTML += `
-        <div>
-        <div class="imgProduct" align="center">
-          <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-          <small>${resul.nombre}</small>
-            <div class="row">
-                
-                <div class="col-4" align="left">
-                    <p class="text-secondary price  text-decoration-line-through fs-7">${resul.pantes}</p>
-                </div>
-                <div class="col-8" align="right">
-                    <p class=" price Before fs-7">${resul.precio}</p>
-                </div>
-            </div>
-        </div>
-        
-      </div>
-        `
-        }
-
-
-    }
+    pintar(result);
 })
 
 woman.addEventListener("click", () => {
-    console.log("mujer");
-
     listDom.innerHTML = ``
     const result = sneakers.filter(sneakers => sneakers.genero == "mujer");
-
-    allSneakers.innerHTML = result.length;
-    listDom.innerHTML = ``
-
-    for (let resul of result) {
-
-        if (resul.oferta == "no") {
-            listDom.innerHTML += `
-            <div>
-            <div class="imgProduct" align="center">
-              <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-              <small>${resul.nombre}</small>
-                <div class="row">
-                    
-                    <div class="col-4" align="left">
-                        
-                    </div>
-                    <div class="col-8" align="right">
-                        <p class=" price Before fs-7">${resul.precio}</p>
-                    </div>
-                </div>
-            </div>
-            
-          </div>
-            `
-
-        } else {
-            listDom.innerHTML += `
-        <div>
-        <div class="imgProduct" align="center">
-          <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-          <small>${resul.nombre}</small>
-            <div class="row">
-                
-                <div class="col-4" align="left">
-                    <p class="text-secondary price  text-decoration-line-through fs-7">${resul.pantes}</p>
-                </div>
-                <div class="col-8" align="right">
-                    <p class=" price Before fs-7">${resul.precio}</p>
-                </div>
-            </div>
-        </div>
-        
-      </div>
-        `
-        }
-
-
-    }
+    pintar(result);
 })
 
 pk.addEventListener("click", () => {
-    console.log("pk")
     listDom.innerHTML = ``
     const result = sneakers.filter(sneakers => sneakers.distancia == "primeros pasos");
-
-    allSneakers.innerHTML = result.length;
-    listDom.innerHTML = ``
-
-    for (let resul of result) {
-
-        if (resul.oferta == "no") {
-            listDom.innerHTML += `
-            <div>
-            <div class="imgProduct" align="center">
-              <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-              <small>${resul.nombre}</small>
-                <div class="row">
-                    
-                    <div class="col-4" align="left">
-                        
-                    </div>
-                    <div class="col-8" align="right">
-                        <p class=" price Before fs-7">${resul.precio}</p>
-                    </div>
-                </div>
-            </div>
-            
-          </div>
-            `
-
-        } else {
-            listDom.innerHTML += `
-        <div>
-        <div class="imgProduct" align="center">
-          <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-          <small>${resul.nombre}</small>
-            <div class="row">
-                
-                <div class="col-4" align="left">
-                    <p class="text-secondary price  text-decoration-line-through fs-7">${resul.pantes}</p>
-                </div>
-                <div class="col-8" align="right">
-                    <p class=" price Before fs-7">${resul.precio}</p>
-                </div>
-            </div>
-        </div>
-        
-      </div>
-        `
-        }
-
-
-    }
+    pintar(result);
 })
 
 diezk.addEventListener("click", () => {
-    console.log("10k")
     listDom.innerHTML = ``
     const result = sneakers.filter(sneakers => sneakers.distancia == "10k");
-
-    allSneakers.innerHTML = result.length;
-    listDom.innerHTML = ``
-
-    for (let resul of result) {
-
-        if (resul.oferta == "no") {
-            listDom.innerHTML += `
-            <div>
-            <div class="imgProduct" align="center">
-              <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-              <small>${resul.nombre}</small>
-                <div class="row">
-                    
-                    <div class="col-4" align="left">
-                        
-                    </div>
-                    <div class="col-8" align="right">
-                        <p class=" price Before fs-7">${resul.precio}</p>
-                    </div>
-                </div>
-            </div>
-            
-          </div>
-            `
-
-        } else {
-            listDom.innerHTML += `
-        <div>
-        <div class="imgProduct" align="center">
-          <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-          <small>${resul.nombre}</small>
-            <div class="row">
-                
-                <div class="col-4" align="left">
-                    <p class="text-secondary price  text-decoration-line-through fs-7">${resul.pantes}</p>
-                </div>
-                <div class="col-8" align="right">
-                    <p class=" price Before fs-7">${resul.precio}</p>
-                </div>
-            </div>
-        </div>
-        
-      </div>
-        `
-        }
-
-
-    }
+    pintar(result);
 })
 
 veinteyunok.addEventListener("click", () => {
-    console.log("21")
     listDom.innerHTML = ``
     const result = sneakers.filter(sneakers => sneakers.distancia == "21k");
-
-    allSneakers.innerHTML = result.length;
-    listDom.innerHTML = ``
-
-    for (let resul of result) {
-
-        if (resul.oferta == "no") {
-            listDom.innerHTML += `
-            <div>
-            <div class="imgProduct" align="center">
-              <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-              <small>${resul.nombre}</small>
-                <div class="row">
-                    
-                    <div class="col-4" align="left">
-                        
-                    </div>
-                    <div class="col-8" align="right">
-                        <p class=" price Before fs-7">${resul.precio}</p>
-                    </div>
-                </div>
-            </div>
-            
-          </div>
-            `
-
-        } else {
-            listDom.innerHTML += `
-        <div>
-        <div class="imgProduct" align="center">
-          <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-          <small>${resul.nombre}</small>
-            <div class="row">
-                
-                <div class="col-4" align="left">
-                    <p class="text-secondary price  text-decoration-line-through fs-7">${resul.pantes}</p>
-                </div>
-                <div class="col-8" align="right">
-                    <p class=" price Before fs-7">${resul.precio}</p>
-                </div>
-            </div>
-        </div>
-        
-      </div>
-        `
-        }
-
-
-    }
+    pintar(result);
 })
 
 cuarentaydosk.addEventListener("click", () => {
-    console.log("42")
     listDom.innerHTML = ``
     const result = sneakers.filter(sneakers => sneakers.distancia == "42k");
+    pintar(result);
+})
 
+descuento.addEventListener("click", () => {
+    listDom.innerHTML = ``
+    const result = sneakers.filter(sneakers => sneakers.oferta == "si");
+    pintadescuentos(result);
+})
+
+
+function pintar(result){
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -727,13 +385,11 @@ cuarentaydosk.addEventListener("click", () => {
 
 
     }
-})
+}
 
-descuento.addEventListener("click", () => {
-    console.log("descuento")
-    listDom.innerHTML = ``
-    const result = sneakers.filter(sneakers => sneakers.oferta == "si");
 
+function pintadescuentos(result){
+   
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -763,8 +419,9 @@ descuento.addEventListener("click", () => {
 
 
     }
-})
 
+
+}
 
 
 for (let sneaker of sneakers) {
