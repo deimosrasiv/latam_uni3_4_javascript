@@ -233,62 +233,11 @@ buscar.addEventListener("click", () => {
  
 })
 
-c0c1.addEventListener("click", () => {
-    listDom.innerHTML = ``
-    const result = sneakers.filter(sneakers => sneakers.precio > 0 && sneakers.precio < 100000);
-    pintar(result);
-})
-
-c1c2.addEventListener("click", () => {
-    listDom.innerHTML = ``
-    const result = sneakers.filter(sneakers => sneakers.precio > 100000 && sneakers.precio < 200000);
-    pintar(result);
-})
-
-men.addEventListener("click", () => {
-    listDom.innerHTML = ``
-    const result = sneakers.filter(sneakers => sneakers.genero == "hombre");
-    pintar(result);
-})
-
-woman.addEventListener("click", () => {
-    listDom.innerHTML = ``
-    const result = sneakers.filter(sneakers => sneakers.genero == "mujer");
-    pintar(result);
-})
-
-pk.addEventListener("click", () => {
-    listDom.innerHTML = ``
-    const result = sneakers.filter(sneakers => sneakers.distancia == "primeros pasos");
-    pintar(result);
-})
-
-diezk.addEventListener("click", () => {
-    listDom.innerHTML = ``
-    const result = sneakers.filter(sneakers => sneakers.distancia == "10k");
-    pintar(result);
-})
-
-veinteyunok.addEventListener("click", () => {
-    listDom.innerHTML = ``
-    const result = sneakers.filter(sneakers => sneakers.distancia == "21k");
-    pintar(result);
-})
-
-cuarentaydosk.addEventListener("click", () => {
-    listDom.innerHTML = ``
-    const result = sneakers.filter(sneakers => sneakers.distancia == "42k");
-    pintar(result);
-})
-
-descuento.addEventListener("click", () => {
-    listDom.innerHTML = ``
-    const result = sneakers.filter(sneakers => sneakers.oferta == "si");
-    pintadescuentos(result);
-})
 
 
-function pintar(result){
+
+function pintar(criterio){
+    const result = sneakers.filter(criterio);
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
@@ -340,8 +289,62 @@ function pintar(result){
 }
 
 
-function pintadescuentos(result){
-   
+
+
+c0c1.addEventListener("click", () =>{
+    let criterio = (sneakers => sneakers.precio > 0 && sneakers.precio < 100000)
+pintar(criterio);
+})
+
+
+c1c2.addEventListener("click", () => {
+    let criterio = (sneakers => sneakers.precio > 100001 && sneakers.precio < 200000)
+    pintar(criterio);
+})
+
+men.addEventListener("click", () => {
+    let criterio = (sneakers => sneakers.genero == "hombre");
+    pintar(criterio);
+})
+
+
+woman.addEventListener("click", () => {
+    let criterio = (sneakers => sneakers.genero == "mujer");
+    pintar(criterio);
+})
+
+pk.addEventListener("click", () => {
+    let criterio = ((sneakers => sneakers.distancia == "primeros pasos");
+    pintar(criterio);
+})
+
+
+diezk.addEventListener("click", () => {
+    let criterio = (sneakers => sneakers.distancia == "10k");
+    pintar(criterio);
+})
+
+veinteyunok.addEventListener("click", () => {
+    let criterio = (sneakers => sneakers.distancia == "21k");
+    pintar(criterio);
+})
+
+cuarentaydosk.addEventListener("click", () => {
+    let criterio = (sneakers => sneakers.distancia == "42k");
+    pintar(criterio);
+})
+
+descuento.addEventListener("click", () => {
+    let criterio = (sneakers => sneakers.oferta == "si");
+    pintadescuentos(criterio);
+})
+
+
+
+
+
+function pintadescuentos(criterio){
+    const result = sneakers.filter(criterio);
     allSneakers.innerHTML = result.length;
     listDom.innerHTML = ``
 
