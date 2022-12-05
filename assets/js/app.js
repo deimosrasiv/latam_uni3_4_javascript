@@ -229,56 +229,8 @@ buscar.addEventListener("click", () => {
 
 
     const result = sneakers.filter(sneakers => sneakers.precio > desde && sneakers.precio < hasta);
-
-    allSneakers.innerHTML = result.length;
-    listDom.innerHTML = ``
-
-    for (let resul of result) {
-
-        if (resul.oferta == "no") {
-            listDom.innerHTML += `
-            <div>
-            <div class="imgProduct" align="center">
-              <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-              <small>${resul.nombre}</small>
-                <div class="row">
-                    
-                    <div class="col-4" align="left">
-                        
-                    </div>
-                    <div class="col-8" align="right">
-                        <p class=" price Before fs-7">${resul.precio}</p>
-                    </div>
-                </div>
-            </div>
-            
-          </div>
-            `
-
-        } else {
-            listDom.innerHTML += `
-        <div>
-        <div class="imgProduct" align="center">
-          <img src="${resul.imagen}" class="" alt="Cargando imagen...">
-          <small>${resul.nombre}</small>
-            <div class="row">
-                
-                <div class="col-4" align="left">
-                    <p class="text-secondary price  text-decoration-line-through fs-7">${resul.pantes}</p>
-                </div>
-                <div class="col-8" align="right">
-                    <p class=" price Before fs-7">${resul.precio}</p>
-                </div>
-            </div>
-        </div>
-        
-      </div>
-        `
-        }
-
-
-    }
-
+    pintar(result);
+ 
 })
 
 c0c1.addEventListener("click", () => {
